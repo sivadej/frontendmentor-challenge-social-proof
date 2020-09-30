@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+
+body {
+  font-family: 'Spartan';
+  font-size: 15px;
+}
+
+.container {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+h1 { 
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+}
+
+h3 {
+  color: hsl(303, 10%, 53%);
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.rating {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  text-align: center;
+}
+
+.rating-star {
+  margin: 5px;
+}
+
+.testimonial-card {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.testimonial-header {
+  color: hsl(300, 24%, 96%);
+  font-weight: 700;
+  
+}
+
+.testimonial-subheader {
+  color: hsl(333, 80%, 67%);
+}
+
+.testimonial-text {
+  color: hsl(0, 0%, 100%);
+  line-height: 1.8;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+.nothing {
+  color: hsl(300, 43%, 22%);
+  background-color: hsl(333, 80%, 67%)
+}
