@@ -1,18 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
 
+
+
 body {
   font-family: 'Spartan';
   font-size: 15px;
+  background-image: url('images/bg-pattern-bottom-desktop.svg');
 }
 
 section {
   margin-bottom: 50px;
 }
 
+.section-rating {
+  flex: 60%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.section-header {
+  flex: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {  
+  display: flex;
+}
+
+
 .container {
-  margin-left: 30px;
-  margin-right: 30px;
-  background-image: url('images/bg-pattern-top-mobile.svg');
+  margin: auto;
+  background-image: url('images/bg-pattern-top-desktop.svg');
+  padding: 50px;
+  max-width: 1200px;
+  background-color: white;
+  box-shadow: 5px 5px 20px rgb(199, 199, 199);
 }
 
 .attribution {
@@ -27,19 +51,18 @@ h1 {
   color: hsl(300, 43%, 22%);
   font-weight: 700;
   font-size: 3em;
-  text-align: center;
 }
 
 h3 {
   color: hsl(303, 10%, 53%);
   font-weight: 700;
   font-size: 1em;
-  text-align: center;
   line-height: 1.8;
 }
 
-.rating {
+.rating-card {
   background-color: hsl(300, 24%, 96%);
+  width: 450px;
   border-radius: 10px;
   padding: 10px;
   margin-top: 15px;
@@ -48,6 +71,22 @@ h3 {
   line-height: 1.8;
   color: hsl(300, 43%, 22%);
   text-align: center;
+  display:flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.rating-card-right {
+  align-self: flex-end;
+}
+
+.rating-stars-col {
+  flex: 40%;
+}
+
+.rating-text-col {
+  text-align: left;
+  flex: 60%;
 }
 
 .rating-star {
@@ -59,6 +98,25 @@ h3 {
   border-radius: 10px;
   padding: 35px;
   margin-top: 15px;
+  height: fit-content;
+}
+
+.testimonial-card-row {
+  height: 300px;
+}
+
+.testimonial-card-left {
+  align-self: flex-start;
+}
+
+.testimonial-card-right {
+  align-self: flex-end;
+}
+
+.testimonial-card-middle {
+  margin-left: 20px;
+  margin-right: 20px;
+  align-self: center;
 }
 
 .testimonial-header {
@@ -85,3 +143,65 @@ h3 {
   width: 40px;
   margin-right: 20px;
 }
+
+
+.Aligner {
+  display: flex;
+  min-width: 600px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 0px;
+    margin: unset;
+    box-shadow: unset;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .section-header {
+    text-align: center;
+  }
+  .section-rating {
+    flex: unset;
+    margin-left: unset;
+  }
+  .rating-card {
+    flex-direction: column;
+    width: unset;
+  }
+  .testimonial-card-middle {
+    margin-left: unset;
+    margin-right: unset;
+  }
+  .Aligner {
+    display: unset;
+    min-width: unset;
+    align-items: unset;
+    justify-content: unset;
+    flex-direction: unset;
+  }
+  
+  .Aligner-item--top {
+    align-self: unset;
+  }
+  
+  .Aligner-item--bottom {
+    align-self: unset;
+  }
+}
+
